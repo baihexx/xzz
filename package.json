@@ -1,0 +1,26 @@
+{
+  "name": "learn-xbh",
+  "version": "0.0.1",
+  "description": "learn & test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "yyxzz",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baihexx/xzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baihexx/xzz/issues"
+  },
+  "homepage": "https://github.com/baihexx/xzz#readme"
+}
