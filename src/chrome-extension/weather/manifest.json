@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "weather",
+  "version": "0.0.0",
+  "description": "show weather",
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png"
+    },
+    "default_title": "Weather",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "http://www.weather.com.cn/data/cityinfo/*"
+  ]
+}
