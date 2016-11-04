@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flex test</title>
+    <meta charset="utf-8"/>
+    <style>
+      body {
+        font-size: 50px;
+      }
+
+      .container {
+        display: flex;
+        display: -webkit-flex;
+        padding: 0 80px;
+      }
+
+      .flex-item1 {
+        flex: 100 1 auto;
+      }
+
+      .flex-item2 {
+        flex: 1 1 auto;
+
+        height: dpr(60px);
+        line-height: dpr(60px);
+        text-align: center;
+        font-size: dpr(36px);
+        font-weight: bold;
+        color: #333333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .flex-item3 {
+        flex: 0 0 auto;
+        width: 80px;
+      }
+
+      .flex-item4 {
+        flex: 100 1 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex-item1">
+      </div>
+      <div class="flex-item2">
+        2555555555555555555555555555555555
+      </div>
+      <div class="flex-item3">
+        <img src='../images/newp.png'>
+      </div>
+      <div class="flex-item4">
+      </div>
+    </div>
+  </body>
+
+</html>

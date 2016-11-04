@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vue test</title>
+    <meta charset="utf-8"/>
+    <style>
+      /* HolyGrail {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        min-height: 100px;
+      }
+
+      header {
+        background-color: gray;
+        flex: 0 0 100px;
+      }
+
+      footer {
+        background-color: gray;
+        flex: 0 0 100px;
+      }
+
+      .HolyGrail-body {
+        background-color: red;
+        flex: 1 1 300px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+      }
+
+      .HolyGrail-content {
+        background-color: blue;
+        flex: 0 0 100px;
+      }
+
+      .HolyGrail-nav {
+        background-color: yellow;
+        flex: 1 1 auto;
+      }
+
+      .HolyGrail-ads {
+        background-color: brown;
+        flex: 0 0 150px;
+      } */
+      .HolyGrail {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      header,
+      footer {
+        flex: 1;
+        background-color: gray;
+      }
+
+      .HolyGrail-body {
+        display: flex;
+        flex: 1;
+        background-color: brown;
+      }
+
+      .HolyGrail-content {
+        flex: 1;
+      }
+
+      .HolyGrail-nav, .HolyGrail-ads {
+        /* 两个边栏的宽度设为12em */
+        flex: 0 0 12em;
+        background-color: brown;
+      }
+
+      .HolyGrail-nav {
+        /* 导航放到最左边 */
+        order: -1;
+      }
+    </style>
+  </head>
+
+  <body class="HolyGrail">
+    <header>...</header>
+    <div class="HolyGrail-body">
+      <main class="HolyGrail-content">...</main>
+      <nav class="HolyGrail-nav">...</nav>
+      <aside class="HolyGrail-ads">...</aside>
+    </div>
+    <footer>...</footer>
+  </body>
+</html>

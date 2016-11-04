@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "google页面简化",
+  "version": "0.1",
+  "description": "google页面 隐藏logo",
+  "content_scripts": [{
+     "matches": ["*://www.google.com.tw/*", "*://www.google.com/*"],
+     "js": ["js/change.js"]
+  }]
+}

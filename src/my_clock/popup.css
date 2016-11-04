@@ -1,0 +1,10 @@
+body {
+  width: 200px;
+  height: 100px;
+}
+
+div {
+  line-height: 100px;
+  text-align: center;
+  font-size: 40px;
+}
