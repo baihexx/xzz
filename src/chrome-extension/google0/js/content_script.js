@@ -5,7 +5,6 @@ var tiles = document.getElementById('mv-tiles')
 // tiles.style.visibility = 'hidden'
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-  debugger
   if(message.isLogoShow) {
     logo.style.visibility = 'visible'
     sendResponse({response: 'Show logo success'})

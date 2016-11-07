@@ -6,7 +6,7 @@ speaker: xbh
 # Chrome 扩展开发简介
 ---
 ## 辛佰惠
-### 2016.11.14
+### 2016.11.07
 
 [slide]
 ## 概念
@@ -15,18 +15,18 @@ speaker: xbh
 * chrome扩展：基于webkit浏览器，利用chrome平台提供的接口，对浏览器做更加复杂的操作
 
 [slide]
-## 简介
+## 优点
 <br>
-* 简洁：安装方便，可立即使用，自动更新
+* 安装：安装方便，可立即使用，自动更新
+* 调试：chrome开发者工具
 * 稳定：独立的进程中运行
 * 技术： html，css，js
-* 调试：chrome开发者工具
 
 [slide]
 ## 配置文件--[manifest.json](http://developer.chrome.com/extensions/manifest)
 ---
-* manifest_version:配置文件版本 整数2
-* name,version，description：插件的名称、版本、描述等信息，在chrome扩展管理、扩展商城中展示的信息就在这里定义
+* manifest_version: 配置文件版本 整数2
+* name, version，description：插件的名称、版本、描述等信息，在chrome扩展管理、扩展商城中展示的信息就在这里定义
 * brower_action: 始终可见
 * page_action：通过配置控制是否可见
 
@@ -59,12 +59,12 @@ speaker: xbh
 ## 基础功能5--数据存储
 <br>
 * localStorage
-* [Chrome Storage APIS](https://developer.chrome.com/extensions/storage)
+* [Chrome Storage APIS](https://developer.chrome.com/extensions/storage): 可保存任意类型的数据
 
 [slide]
 ## 基础功能6--页面间的通信
 * c --> b: runtime.sendMessage、runtime.onMessage  
-* b --> c: tabs.sendMessage、runtime.onMessage  
+* b --> c: [tabs.sendMessage](https://developer.chrome.com/extensions/tabs#method-sendMessage)、runtime.onMessage  
 ![](/3.png)
 
 [slide]
